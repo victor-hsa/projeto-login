@@ -3,6 +3,56 @@
 /* Paleta de cores
 
 Verde: #49a09d
-Lilás: 5f2cb2
+Lilás: #5f2cb2
 
 */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2cb2;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
+}
+
+#login > #imagem {
+    display: block;
+    background: #5f2cb2 url(../imagens/vasco.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: bottom bottom;
+    
+}
+
+#login > #formulario {
+    display: block;
+    padding: 10px;
+}
